@@ -103,7 +103,7 @@ function sumAllDigits() {
 }
 console.log(sumAllDigits())
 // /*
-// Write a function to retrieve the largest number in an array.sdadsad 
+// Write a function to retrieve the largest number in an array.
 // */
 
 
@@ -111,8 +111,8 @@ console.log(sumAllDigits())
 const getHeighstNum = (num) => {
   let highestNum = 0;
   for (let i = 0; i < num.length; i++) {
-    const element = num[i];
-    highestNum = highestNum < num[i] ? num[i] : highestNum;
+    const item = num[i];
+    highestNum = highestNum < item ? item : highestNum;
   }
   return highestNum;
 }
