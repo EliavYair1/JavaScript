@@ -57,22 +57,32 @@ console.log(powerOf(5, 2))
 
 // /* 
 // print the number of digits in a given number.
-// 1000
+
 // */
 // task #4
 
+
 function countDigits(num) {
 
-  let numLen = 0;
+  let numCount = 0;
+
   for (let i = 0; i < num || num == 1; i++) {
-    num = Math.trunc(num / 10);
-    numLen++;
+    num = Math.floor(num / 10);
+    numCount++;
 
   }
-  return numLen + 1;
+  return numCount + 1;
 
+  //another way to solve this
+
+  // while (num != 0) {
+  //   num = Math.floor(num / 10);
+  //   numCount++;
+  // }
+  // return numCount;
 }
-console.log(countDigits(5548138120))
+console.log(countDigits(5548138120185))
+console.log(countDigits(555))
 
 
 // /*
