@@ -334,12 +334,18 @@
 // console.log(getHeighstPayment([20, 100, 50, 60, 5]));
 // // write a function that simulate dice throwing. return a number between 1 to 6, The caller will print the dices and stop when the dice is 6.
 
-// function getDice() {
-//   return getRandomInt(6) + 1;
-// }
-// let dice = 0;
-// while (dice != 6) {
-//   dice = getDice()
-//   console.log(dice);
 
-// }
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max)
+
+}
+
+function getDice() {
+  return getRandomInt(6) + 1;
+}
+let dice = 0;
+while (dice != 6) {
+  dice = getDice()
+  console.log(dice);
+
+}
