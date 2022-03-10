@@ -87,12 +87,8 @@ var pantry = [
   ['juice', 'milk', 'water', 'soy milk', 'soda', 'tea'],
   ['apple', 'banana', 'more kale', 'ice cream', 'chocolate', 'kiwi']
 ]
-var meals = []
-var firstMeal = []
-var secondMeal = []
-var thirdMeal = []
-var forthMeal = []
-var fifthMeal = []
+
+
 for (var i = 0; i < pantry.length; i++) {
   var meals = `[${pantry[0][i]}, ${pantry[1][i]}, ${pantry[2][i]}, ${pantry[3][i]}, ${pantry[4][i]}]`
   console.log(meals);
